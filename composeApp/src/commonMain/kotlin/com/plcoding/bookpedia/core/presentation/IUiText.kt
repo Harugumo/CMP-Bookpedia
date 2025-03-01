@@ -5,12 +5,12 @@ import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
 
 
-sealed interface UiText {
-    data class DynamicString(val value: String): UiText
+sealed interface IUiText {
+    data class DynamicString(val value: String): IUiText
     class StringResourceId(
         val id: StringResource,
         val args: Array<Any> = arrayOf()
-    ): UiText
+    ): IUiText
 
     @Composable
     fun asString(): String {
