@@ -13,19 +13,19 @@ data class Book(
     /** @property authors book authors */
     val authors: List<String>,
 
-    /** @property description book's description */
+    /** @property description Book's description */
     val description: String?,
 
-    /** @property languages book's languages */
+    /** @property languages Book's languages */
     val languages: List<String>,
 
-    /** @property firstPublishYear first publish date of the book */
+    /** @property firstPublishYear First publish date of the book */
     val firstPublishYear: String?,
 
-    /** @property averageRating rating of the book */
+    /** @property averageRating Rating of the book */
     val averageRating: Double?,
 
-    /** @property ratingCount rating count of the book */
+    /** @property ratingCount Rating count of the book */
     val ratingCount: Int?,
 
     /** @property numEdition book's edition number */
