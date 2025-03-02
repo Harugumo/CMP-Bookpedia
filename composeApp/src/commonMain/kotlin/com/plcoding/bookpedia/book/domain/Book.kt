@@ -28,6 +28,9 @@ data class Book(
     /** @property ratingCount Rating count of the book */
     val ratingCount: Int?,
 
-    /** @property numEdition book's edition number */
-    val numEdition: Int
+    /** @property numPages book's page number */
+    val numPages: Int?,
+
+    /** @property numEditions number of editions */
+    val numEditions: Int
 )

@@ -34,6 +34,7 @@ val fakeBooks = (1..100).map {
         firstPublishYear = null,
         averageRating = 4.6785,
         ratingCount = 4,
-        numEdition = 3,
+        numPages = 10,
+        numEditions = 3,
     )
 }
