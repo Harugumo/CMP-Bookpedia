@@ -1,5 +1,6 @@
 package com.plcoding.bookpedia.book.data.network
 
+import com.plcoding.bookpedia.book.data.dto.BookWorkDto
 import com.plcoding.bookpedia.book.data.dto.SearchResponseDto
 import com.plcoding.bookpedia.core.domain.IDataError
 import com.plcoding.bookpedia.core.domain.IResult
@@ -10,5 +11,5 @@ interface IRemoteBookDataSource {
         resultLimit: Int? = null
     ): IResult<SearchResponseDto, IDataError.Remote>
 
-//    suspend fun getBookDetails(bookWorkId: String): IResult<BookWorkDto, IDataError.Remote>
+    suspend fun getBookDetails(bookWorkId: String): IResult<BookWorkDto, IDataError.Remote>
 }

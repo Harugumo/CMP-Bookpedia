@@ -22,7 +22,7 @@ fun BookList(
     modifier: Modifier = Modifier
 ) {
     LazyColumn(
-        modifier = Modifier,
+        modifier = modifier,
         state = scrollState,
         verticalArrangement = Arrangement.spacedBy(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally
