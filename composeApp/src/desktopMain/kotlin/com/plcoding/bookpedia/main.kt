@@ -5,6 +5,7 @@ import androidx.compose.ui.window.application
 import com.plcoding.bookpedia.app.App
 import com.plcoding.bookpedia.di.initKoin
 
+// ./gradlew run
 fun main() {
     initKoin()
     application {
