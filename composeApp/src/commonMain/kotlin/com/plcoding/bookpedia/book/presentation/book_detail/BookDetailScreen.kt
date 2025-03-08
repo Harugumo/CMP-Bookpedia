@@ -26,8 +26,9 @@ fun BookDetailScreenRoot(
     )
 }
 
+/** For the preview only */
 @Composable
-private fun BookDetailScreen(
+fun BookDetailScreen(
     state: BookDetailState,
     onAction: (IBookDetailAction) -> Unit
 ) {

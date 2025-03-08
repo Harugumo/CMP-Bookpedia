@@ -66,6 +66,7 @@ fun BookListScreenRoot(
     )
 }
 
+/** For the preview only */
 @Composable
 fun BookListScreen(
     state: BookListState,

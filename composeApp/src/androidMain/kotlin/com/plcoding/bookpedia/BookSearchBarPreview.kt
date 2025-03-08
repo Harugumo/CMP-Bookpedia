@@ -9,6 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.plcoding.bookpedia.book.domain.Book
+import com.plcoding.bookpedia.book.presentation.book_detail.BookDetailScreen
+import com.plcoding.bookpedia.book.presentation.book_detail.BookDetailState
 import com.plcoding.bookpedia.book.presentation.book_list.BookListScreen
 import com.plcoding.bookpedia.book.presentation.book_list.BookListState
 import com.plcoding.bookpedia.book.presentation.book_list.components.BookSearchBar
@@ -58,5 +60,20 @@ private val fakeBooks = (1..100).map {
         ratingCount = 4,
         numPages = 10,
         numEditions = 3,
+    )
+}
+
+@Preview()
+@Composable
+private fun BookListDetailPreview(
+
+) {
+    BookDetailScreen(
+        state = BookDetailState(
+            book = fakeBooks.first(),
+            isFavorite = false,
+            isLoading = false,
+        ),
+        onAction = { },
     )
 }
